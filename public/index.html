@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouYuanMeng’s</title>
+    <link rel="stylesheet" href="./animate.css">
+    <style type="text/css">
+        .senword{
+            display: flex;
+            text-align: center;
+        }
+        .sendword #content{
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            font-size: 50px;
+            
+            margin-top: 250px;
+            animation: fadeInDownBig 1s;
+        }
+       
+        a{
+            text-decoration: none;
+            color: black;
+        }
+       
+        #zfb{
+            width: 394px;
+            height: 500px;
+            background-image: url();
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            display: none;
+            transform: translate(-50%,-50%);
+         }
+        #zfb>p{
+             text-align: center;
+             color: rosybrown;
+             font-size: 40px;
+        }
+    </style>
+    </head>
+    <body>
+        <script>
+        
+        function xiang(){
+        let zfb = document.getElementById('zfb');
+        zfb.style.display="block";
+        }
+        function offxiang(){
+        let zfb = document.getElementById('zfb');
+        if(confirm('宁真的不想我了吗')){
+            alert('我太难了');
+        }
+
+        zfb.style.display="none";
+        }
+        </script>
+        <div class="sendword">
+           <p id="content">风生水起 与你 可能是一念之间。</p>
+        </div>
+        <div id="zfb" onclick="javascript:offxiang()">
+            <img src="/img/zfb.png" alt="">
+            <p>想我就给我打点钱不多20就行 我会爱上你的</p>
+        </div>
+        <div style="color: black; margin-top:500px;"> 
+                <center>
+                    <p>
+                        <a href="#">首页</a> |
+                        <a href="/project.html">个人项目</a> |
+                        <a href="/graduate.html">毕业设计</a> |
+                        <a href="https://github.com/amengCow">github</a> |
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=962605500&site=qq&menu=yes">联系我</a> |
+                        <a href="javascript:xiang();"style="color:#ff003b;">想你啦</a>
+                        </p>
+                        </center>
+                <center><a href="http://www.beian.miit.gov.cn/">豫ICP备19040546号  </a>该网站仅供学习 请勿用于商业用途 如有侵权请联系删除</center>
+            </div>
+        </div>
+    </body>
+</html>
+ 
